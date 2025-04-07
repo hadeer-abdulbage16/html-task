@@ -39,15 +39,18 @@ start head section
     border: 2px solid rgb(244, 180, 0 ,0.2);
     color: #01070c !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
+    .head{
+        width: fit-content;
+    }
     .logotext{
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 600;
         color: #0e2a47;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .head{
-        font-size: 35px;
+        font-size: 25px;
     }
     .btn-head{
         background-color: #f4b400;
@@ -116,17 +119,19 @@ start head section
 .hero .form h2{
     color: #0e2a47;
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .hero{
         height: fit-content; 
        background-image:url('./../img/welcome-banner.jpg') ;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        width: 100%;
     
     }
     .contant-hero{
-        display:inline-block;
+        display:flex;
+        flex-direction: column;
         font-size: 35px;
         text-align: center;
         height: 100% !important;
@@ -171,7 +176,7 @@ start head section
 .about .contant-about p{
     color: #0e2a47;
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     
     .about{
         display:inline-block;
@@ -179,7 +184,7 @@ start head section
         text-align: center;
         height: 100% !important;
         padding: 40px;
-        
+       
     }
     .about .img{
         width: 100%;
@@ -194,6 +199,10 @@ start head section
     }
     .contant-about{
        display: inline;
+       width: fit-content;
+    }
+    .about .text{
+        width: fit-content;
     }
     .about .contant-about h3{
         font-size: 45px;
@@ -208,7 +217,7 @@ start head section
    text-align: center;
    justify-content: space-around;
    padding-top: 20px;
-   
+   width: fit-content;
 }
 .logos i{
     font-size: 60px;
@@ -225,12 +234,14 @@ start head section
     font-size: 18px;
     font-weight: 500;
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .logos{
-        text-align: center;
-        justify-content: space-around;
+       display: flex;
+       flex-direction: column;
         padding-top: 20px;
-        
+        width: fit-content;
+        text-align: center;
+        align-items: center;
      }
      .logos i{
          font-size: 80px;
@@ -275,11 +286,12 @@ start head section
 .service .text-service .hie{
  height: 30%;  
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .service{
         align-items: center;
           height: fit-content;
         margin-top: 45px;
+        width: fit-content;
        
     }
     .responsive{
@@ -319,9 +331,10 @@ start head section
 .offer .right-text h2{
     color: #0e2a47;
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .offer{
         font-size: 40px;
+        width: fit-content;
     }
   }
   
@@ -349,18 +362,21 @@ color: #0e2a47;
     border: 1px solid rgba(0, 0, 0, 0.1);
     
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .service-offer {
         font-size: 40px;
+        width: fit-content;
 
     }
     .service-offer .crad{
        display: inline;
        flex-direction: column;
+       align-items: center !important;
+       justify-content: center !important;
     }
-    .service-offer .crad .crad-body  i,p {
+    .service-offer .crad .crad-body   {
         font-size: 40px;
-
+          width: 100%;
         }
   }
   
@@ -406,12 +422,14 @@ color: #0e2a47;
     border-right: #f4b400 solid 14px;
     
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .choose {
         height: fit-content;
         width: 100%;
+        font-size: 40px;
        display: inline;
         flex-direction: column;
+        text-align: center;
     }
     .choose .padding{
         height: 20%;
@@ -424,9 +442,35 @@ color: #0e2a47;
     }
     .choose .text{
         height: 100%;
+        width: fit-content;
     }
+    .choose .row{
+        margin: 0 !important;
+        padding: 0 !important;
+        grid-row: 0 !important;
+        width: 100%;
+        grid-column: 0 !important;
+        
+    }
+    .choose .card{
+        width: 100vw !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 45px;
+    }
+    .choose .card .card-body {
+       width: 100vw !important;
+       font-size: 50px;
+       padding: 2px;
+       border: #f4b400 2px solid;
+    }
+    
     .choose h2{
         color: #0e2a47;
+        font-size: 40px;
     }
     
     .choose .img{
@@ -456,9 +500,21 @@ color: #0e2a47;
 {
    height: 30%; 
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .custmor{
         font-size: 40px;
+        width: fit-content;
+    }
+    .custmor .card{
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100vw;
+    }
+    .custmor .card-body{
+        margin: 0 !important;
+        padding: 0;
+        width: 100vw;
+        font-size: 45px;
     }
    
   }
@@ -494,12 +550,13 @@ color: #0e2a47;
     width: 50px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .test {
         color: #0e2a47;
         text-align: center;
         align-items: center;
         font-size: 40px;
+        width: fit-content;
      }
      .test .card-body{
          box-shadow:10px 10px rgb(0, 0, 0,0.1) ;
@@ -514,7 +571,7 @@ color: #0e2a47;
      .test .card{
          display: flex !important;
          flex-direction: column;
-         width: 100%;
+         width: 100vw;
         
          padding: 0 !important;
          margin: 0 !important;
@@ -522,8 +579,9 @@ color: #0e2a47;
          
      }
      .test .card-body{
-         width: 90% !important;
+         width: 100vw !important;
          text-align: center;
+         font-size: 45px;
          justify-content: center !important;
      }
      .test h5{
@@ -537,6 +595,7 @@ color: #0e2a47;
 /*########################################
 START FOOTER SECTION
 */
+/*****/
 .footer{
     background-color: #0e2a47;
     height: 40vh;
@@ -549,8 +608,11 @@ START FOOTER SECTION
     height: 30%;
     margin-top: 40px;
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .footer h2 {
+        font-size: 50px;
+    }
+    .footer p {
         font-size: 50px;
     }
 }
