@@ -219,9 +219,10 @@ start head section
 /*START LOGOS SECTION*/
 .logos{
    text-align: center;
-   justify-content: space-around;
+   justify-content: center;
    padding-top: 20px;
    width: fit-content;
+   margin: auto;
 }
 .logos i{
     font-size: 60px;
@@ -349,13 +350,11 @@ start head section
 
 }
 .service-offer .crad{
-    justify-content: space-around;
+   
 }
 .service-offer .crad-body{
-   
-   
 }
-.service-offer .crad .crad-body  i,h6,p{
+.service-offer .crad .crad-body  i{
 color: #0e2a47;
 }
 .service-offer .crad .crad-body  h6{
@@ -408,7 +407,7 @@ color: #0e2a47;
     background-color: rgb(155, 196, 240 ,0.1);
     height: fit-content;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-between !important;
     
 }
 .choose .padding{
@@ -420,33 +419,34 @@ color: #0e2a47;
     justify-content: space-around;
 }
 .choose .text{
-    
+    width: 50% !important;
     padding-right: 3px;
 }
 .choose h2{
     color: #0e2a47;
 }
-.choose p{
-   
+.choose .card-body{
+    width: 100% !important;
+    margin-top: 5px !important;
+    margin: 0 !important;
+
 }
 .choose .card  {
     display: flex;
-    flex-direction: row;
+    
     flex-wrap: wrap;
     color: #0e2a47;
     width: 100% !important;
     justify-content: space-around !important;
-    margin-top: 5px;
+      margin: 0 ;
 }
-.choose .card-body{
-    width: 100% !important;
-    margin-top: 5px !important;
-}
+
 .choose .img{
     padding-top: 10px;
-    width: 95%;
+   margin-top: auto;
     height: 90%;
-    margin-left: 15px;
+    align-items: flex-end;
+    justify-self: end;
 }
 .choose .img img {
     width: 100%;
